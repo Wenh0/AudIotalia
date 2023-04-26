@@ -1,1 +1,62 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    font-family: Arial;
+}
+
+.head{
+    margin:0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content {
+    margin: 10px;
+}
+
+.content .audioContent{
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+.content .audioContent .box{
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin: 1rem;
+}
+
+.content .audioContent .box audio{
+    width: 100%;
+    outline: none; 
+    border-radius: 0.5rem;
+}
+
+footer{
+    margin-top: 100%;
+    background-color: blue;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.content .audioContent .box audio::-webkit-media-controls-panel {
+    background-color: #56AEFF;
+  }
+
+@media(max-width:600px) {
+    body{
+        font-size: larger;
+    }
+    .content .audioContent{
+        flex-flow: column;
+    }
+    .content .carte {
+        width: 100%;
+    }
+}
