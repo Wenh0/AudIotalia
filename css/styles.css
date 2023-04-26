@@ -5,6 +5,9 @@
 
 body{
     font-family: Arial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column ;
 }
 
 .head{
@@ -20,8 +23,9 @@ body{
 .content .audioContent{
     align-items: center;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: beige;
+    padding: 20px;
 }
 
 .content .audioContent .box{
@@ -40,13 +44,17 @@ body{
 }
 
 footer{
-    margin-top: 100%;
-    background-color: blue;
-    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    margin-top: auto;
+    background-color: #DC143C;
+    border-radius: 20px 20px 0rem 0rem;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    width: 100%;
 }
 
 .content .audioContent .box audio::-webkit-media-controls-panel {
-    background-color: #56AEFF;
+    background-color: #FFA07A;  
   }
 
 @media(max-width:600px) {
